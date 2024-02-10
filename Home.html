@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>SENSE OF CRAFT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Must</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">main</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">furnaiture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">outdoor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form action="" class="">
+                        <button class="icon-serch" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20"
+                                fill="none">
+                                <path
+                                    d="M17.3094 18.6903L15.6829 16.9903M8.7704 17.8403C9.78496 17.8403 10.7896 17.6314 11.7269 17.2256C12.6642 16.8198 13.5159 16.225 14.2333 15.4752C14.9507 14.7254 15.5198 13.8352 15.908 12.8555C16.2963 11.8758 16.4961 10.8257 16.4961 9.76531C16.4961 8.70488 16.2963 7.65484 15.908 6.67514C15.5198 5.69543 14.9507 4.80525 14.2333 4.05542C13.5159 3.30559 12.6642 2.71079 11.7269 2.30498C10.7896 1.89917 9.78496 1.69031 8.7704 1.69031C6.72141 1.69031 4.75635 2.54106 3.30749 4.05542C1.85864 5.56978 1.04468 7.62368 1.04468 9.76531C1.04468 11.9069 1.85864 13.9608 3.30749 15.4752C4.75635 16.9896 6.72141 17.8403 8.7704 17.8403V17.8403Z"
+                                    stroke="black" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <input class="search" type="text" id="find" onkeyup="search()" placeholder="search" />
+                    </form>
+                    <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="27" height="31"
+                            viewBox="0 0 27 31" fill="none">
+                            <path
+                                d="M13.4908 13.9854C13.3076 13.9708 13.0876 13.9708 12.886 13.9854C10.7823 13.9284 8.78893 13.2196 7.32813 12.0092C5.86733 10.7987 5.05378 9.18173 5.05975 7.50057C5.05975 3.91413 8.68878 1.00106 13.1976 1.00106C14.2651 0.985677 15.3259 1.13837 16.3194 1.45043C17.313 1.76248 18.2199 2.22779 18.9884 2.81977C19.7568 3.41175 20.3717 4.11882 20.798 4.9006C21.2243 5.68238 21.4536 6.52357 21.4729 7.37614C21.4921 8.22871 21.3009 9.07595 20.9102 9.86951C20.5195 10.6631 19.9369 11.3874 19.1957 12.0011C18.4545 12.6148 17.5692 13.106 16.5904 13.4464C15.6115 13.7869 14.5583 13.9701 13.4908 13.9854V13.9854ZM4.32661 19.3871C-0.108871 21.7585 -0.108871 25.6231 4.32661 27.9799C9.36694 30.6734 17.6331 30.6734 22.6734 27.9799C27.1089 25.6084 27.1089 21.7439 22.6734 19.3871C17.6514 16.7082 9.38526 16.7082 4.32661 19.3871V19.3871Z"
+                                stroke="black" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+                <!-- offcanvous -->
+            </div>
+        </nav>
+    </header>
+    <section class="photo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-h1">SENSE OF CRAFT</h1>
+                    <p class="p-text">
+                        this is the case when elegent minimailism is <br />
+                        embodied iscomfert and free space.
+                    </p>
+                    <div>
+                        <a class="href" href="#"> SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1 class="h1-center text-center mt-5">FEATURED FAVORITES</h1>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="img" src="img/Genava Table.jpg" class=" photo-on card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center"> Genava Table</h5>
+                                            <p class="card-text text-center">$ 2.449</p>
+                                            <div class="text-center">
+                                                <span id="green"></span>
+                                                <span id="black"></span>
+                                                <span id="orange"></span>
+                                                <span id="blue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="imgs" src="img/Kibo Sofa.jpg" class=" photo-No card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Munich moudler chir</h5>
+                                            <p class="card-text text-center">$ 1.499</p>
+                                            <div class="text-center">
+                                                <span id="one"></span>
+                                                <span id="two"></span>
+                                                <span id="three"></span>
+                                                <span id="four"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="pho" src="img/Kibo Sofa.jpg" class=" photo-to card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Munich moudler chir</h5>
+                                            <p class="card-text text-center ">$ 1.499.</p>
+                                            <div class="text-center">
+                                                <span id="what"></span>
+                                                <span id="woow"></span>
+                                                <span id="on"></span>
+                                                <span id="yab"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div><!-- carousel-item active -->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="Mo" src="img/Munich moudler chir.jpg" class=" photo-To card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Kibo Sofa</h5>
+                                            <p class="card-text text-center">$ 3.790 </p>
+                                            <div class="text-center">
+                                                <span id="cherone"></span>
+                                                <span id="chertwo"></span>
+                                                <span id="cherthree"></span>
+                                                <span id="cherfour"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="Genava" src="img/Genava Table.jpg" class=" photo-tr card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Genava Table</h5>
+                                            <p class="card-text text-center">$ 2.449</p>
+                                            <div class="text-center">
+                                                <span id="Genavagreen"></span>
+                                                <span id="Genavablack"></span>
+                                                <span id="Genavaorange"></span>
+                                                <span id="Genavablue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="Table" src="img/Genava Table.jpg" class=" photo-TR card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Genava Table </h5>
+                                            <p class="card-text text-center">$ 2.449</p>
+                                            <div class="text-center">
+                                                <span id="Tablegreen"></span>
+                                                <span id="Tableyellow"></span>
+                                                <span id="Tableorange"></span>
+                                                <span id="Tableblue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+                            </div> <!-- row -->
+                        </div><!-- carousel-item -->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="Kibo" src="img/Kibo Sofa.jpg" class=" photo-fo card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Munich moudler chir</h5>
+                                            <p class="card-text text-center">$ 1.499</p>
+                                            <div class="text-center">
+                                                <span id="Kibogreen"></span>
+                                                <span id="Kiboblack"></span>
+                                                <span id="Kiboorange"></span>
+                                                <span id="Kiboblue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="moudler" src="img/Munich moudler chir.jpg"
+                                            class="photo-FO card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Kibo Sofa</h5>
+                                            <p class="card-text text-center">$ 3.790</p>
+                                            <div class="text-center">
+                                                <span id="moudlergreen"></span>
+                                                <span id="moudlerblack"></span>
+                                                <span id="moudlerorange"></span>
+                                                <span id="moudlerblue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <img id="chir" src="img/Munich moudler chir.jpg" class=" photo-fi card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+
+                                            <h5 class="card-title text-center">Kibo Sofa</h5>
+                                            <p class="card-text text-center">$ 3.790</p>
+                                            <div class="text-center">
+                                                <span id="chirgreen"></span>
+                                                <span id="chirblack"></span>
+                                                <span id="chirorange"></span>
+                                                <span id="chirblue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div><!-- carousel-item -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="imgs mt-5">
+                        <img src="img/chire.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card mt-5">
+                        <img id="car" src="img/Kibo Sofa.jpg" class=" photo-chir card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Genava Table</h5>
+                            <p class="card-text text-center">$ 2.449</p>
+                            <div class="text-center">
+                                <span id="cargreen"></span>
+                                <span id="carblack"></span>
+                                <span id="carorange"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card mt-5">
+                        <img id="cars" src="img/room.jpg" class=" photo-chir card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Genava Table</h5>
+                            <p class="card-text text-center">$ 2.449</p>
+                            <div class="text-center">
+                                <span id="carsgreen"></span>
+                                <span id="carsblack"></span>
+                                <span id="carsorange"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col -->
+
+                <div class="col-md-8">
+                    <div class="imgs m-5">
+                        <img src="img/room.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1 class="h-foter mt-5"> Must </h1>
+                    <div class="li">
+                        <li><a class="li-a" href="#"> Wayside 3000-road 23 </a></li>
+                        <li><a class="li-a" href="#">  mustfurnature@gmail.com </a></li>
+                        <li><a class="li-a" href="#"> +100 075 4445 </a></li>
+                    </div>
+                    <a class="li-a" href="#"><i class="fa-brands fa-square-facebook"></i> </a>
+                    <a class="li-a" href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                </div>
+                <div class="col-md-2">
+                    <h1 class="h-foter mt-5 p-2"> Explore </h1>
+                    <div class="li">
+                        <li><a class="li-a" href="#"> FFAQ </a></li>
+                        <li><a class="li-a" href="#"> contact us </a></li>
+                        <li><a class="li-a" href="#"> shopping </a></li>
+                        <li><a class="li-a" href="#"> returns </a></li>
+                        <li><a class="li-a" href="#"> pay ment </a></li>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h1 class="h-foter mt-5 p-2"> Help </h1>
+                    <div class="li">
+                        <li><a class="li-a" href="#"> FFAQ </a></li>
+                        <li><a class="li-a" href="#"> contact us </a></li>
+                        <li><a class="li-a" href="#"> shopping </a></li>
+                        <li><a class="li-a" href="#"> returns </a></li>
+                        <li><a class="li-a" href="#"> pay ment </a></li>
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+                    <h1 class="h-foter mt-5"> Stay in touch </h1>
+                    <input class="emal mt-2" type="email" placeholder="Your Email">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

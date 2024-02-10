@@ -1,0 +1,1023 @@
+.navbar {
+    position: fixed;
+    /* position: sticky; */
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+}
+
+@keyframes sticky-slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-family: Nunito;
+    font-size: 19px;
+    position: relative;
+    margin: 2px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: black;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #198F51;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover:before,
+.nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.serch {
+    /* border: none; */
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.icon-serch {
+    border: none;
+    outline: none;
+}
+
+.icon {
+    margin: 9px;
+    font-size: 10px;
+}
+
+.photo {
+    background-image: url(../img/Pexels\ Photo\ by\ Pixabay.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.text-h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 42px;
+    font-style: normal;
+    margin-top: 13%;
+}
+
+.p-text {
+    color: #000;
+    font-family: Nunito;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.href {
+    text-decoration: none;
+    border-radius: 6px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.href:hover {
+    color: #fff;
+    border-radius: 20px;
+    transition: 1s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.card {
+    background-color: #E7E8EC;
+}
+
+.photo-on {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-No {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-to {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-To {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-to {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-tr {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-TR {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-fo {
+    width: 100%;
+    height: 160px;
+}
+
+.photo-FO {
+    width: 100%;
+    height: 159px;
+}
+
+.photo-fi {
+    width: 100%;
+    height: 159px;
+}
+
+/* .carousel-control-next{
+    right: 35px;
+} */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(44, 46, 46);
+    color: #000;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* one */
+.red,
+.yellow,
+.blue,
+.black {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.brown {
+    background: brown;
+}
+
+.purple {
+    background: purple;
+}
+
+.blue {
+    background: blue;
+}
+
+.black {
+    background: black;
+}
+
+#green {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#black {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#orange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#blue {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* end one */
+
+/* !-- two -- */
+.one,
+.two,
+.three,
+.four {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.one {
+    background: red;
+}
+
+.two {
+    background: yellow;
+}
+
+.three {
+    background: blue;
+}
+
+.four {
+    background: black;
+}
+
+#one {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#two {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#three {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#four {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* !-- end two */
+
+/* todo three */
+.what,
+.woow,
+.on,
+.yab {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.what {
+    background: red;
+}
+
+.woow {
+    background: yellow;
+}
+
+
+
+.on {
+    background: blue;
+}
+
+.yab {
+    background: black;
+}
+
+#what {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#woow {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#on {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#yab {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* todo End three */
+
+/* ? --- four */
+.cherone,
+.chertwo,
+.cherthree,
+.cherfour {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.cherone {
+    background: red;
+}
+
+.chertwo {
+    background: yellow;
+}
+
+
+
+.cherthree {
+    background: blue;
+}
+
+.cherfour {
+    background: black;
+}
+
+#cherone {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#chertwo {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#cherthree {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#cherfour {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ? --- End four */
+
+/* ? --- five --- */
+.Genavagreen,
+.Genavablack,
+.Genavaorange,
+.Genavablue {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.Genavagreen {
+    background: red;
+}
+
+.Genavablack {
+    background: yellow;
+}
+
+.Genavaorange {
+    background: blue;
+}
+
+.Genavablue {
+    background: black;
+}
+
+#Genavagreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Genavablack {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Genavaorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Genavablue {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ? --- End five */
+
+/* ? --- six --- */
+.Tablegreen,
+.Tableyellow,
+.Tableorange,
+.Tableblue {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.Tablegreen {
+    background: red;
+}
+
+.Tableyellow {
+    background: yellow;
+}
+
+.Tableorange {
+    background: blue;
+}
+
+.Tableblue {
+    background: black;
+}
+
+#Tablegreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Tableyellow {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Tableorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Tableblue {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ? --- End six */
+
+/* ? --- seven --- */
+.Kibogreen,
+.Kiboblack,
+.Kiboorange,
+.Kiboblue {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.Kibogreen {
+    background: red;
+}
+
+.Kiboblack {
+    background: yellow;
+}
+
+.Kiboorange {
+    background: blue;
+}
+
+.Kiboblue {
+    background: black;
+}
+
+#Kibogreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Kiboblack {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Kiboorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#Kiboblue {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ? --- End seven */
+
+/* todo --- eight --- */
+.moudlergreen,
+.moudlerblack,
+.moudlerorange,
+.moudlerblue {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.moudlergreen {
+    background: red;
+}
+
+.moudlerblack {
+    background: yellow;
+}
+
+.moudlerorange {
+    background: blue;
+}
+
+.moudlerblue {
+    background: black;
+}
+
+#moudlergreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#moudlerblack {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#moudlerorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#moudlerblue {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* todo --- End eight */
+
+/* todo --- nine --- */
+.chirgreen,
+.chirblack,
+.chirorange,
+.chirblue {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.chirgreen {
+    background: red;
+}
+
+.chirblack {
+    background: yellow;
+}
+
+.chirorange {
+    background: blue;
+}
+
+.chirblue {
+    background: black;
+}
+
+#chirgreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#chirblack {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#chirorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#chirblue {
+    width: 29px;
+    height: 28px;
+    background: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* todo --- End nine */
+
+.imgs img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* todo --- ten --- */
+.cargreen,
+.carblack,
+.carorange {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.cargreen {
+    background: red;
+
+}
+
+.carblack {
+    background: yellow;
+}
+
+.carorange {
+    background: blue;
+}
+
+/* .chirblue {
+    background: black;
+} */
+
+#cargreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#carblack {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#carorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.photo-chir {
+    width: 100%;
+    height: 100%;
+}
+
+/* todo --- End ten */
+
+/* todo --- eleven --- */
+.carsgreen,
+.carsblack,
+.carsorange {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.carsgreen {
+    background: red;
+
+}
+
+.carsblack {
+    background: yellow;
+}
+
+.carsorange {
+    background: blue;
+}
+
+/* .chirblue {
+    background: black;
+} */
+
+#carsgreen {
+    width: 29px;
+    height: 28px;
+    background: green;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#carsblack {
+    width: 29px;
+    height: 28px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#carsorange {
+    width: 29px;
+    height: 28px;
+    background: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.photo-chir {
+    width: 100%;
+    height: 100%;
+}
+
+/* todo --- End eleven */
+
+footer {
+    background-color: #000;
+}
+
+.h-foter {
+    color: #fff;
+    font-size: 21px;
+}
+
+.emal {
+    color: #fff;
+    background-color: #000;
+    background-clip: padding-box;
+    padding-left: 10px;
+    height: 36px;
+    border: 1px solid #ced4da;
+}
+
+.li {
+    list-style: none;
+}
+
+.li-a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #b8c3cc;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #90b197;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #081f0e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #dba979;
+}
